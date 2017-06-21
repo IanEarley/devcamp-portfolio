@@ -1,4 +1,10 @@
 GIT
+  remote: https://github.com/IanEarley/DapperDeerViewTool
+  revision: 3d1d467ed00c110dd1fe30a9adb2ed29278ec3e9
+  specs:
+    dapper_deer_view_tool (0.1.0)
+
+GIT
   remote: https://github.com/twbs/bootstrap-rubygem
   revision: 7cdeca9a0e8db3bb7548d9fa5bdaad9b644fca32
   specs:
@@ -193,6 +199,7 @@ DEPENDENCIES
   bootstrap!
   byebug
   coffee-rails (~> 4.2)
+  dapper_deer_view_tool!
   devise (~> 4.3)
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
