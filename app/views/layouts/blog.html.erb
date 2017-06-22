@@ -18,13 +18,7 @@
 
   <%= render 'shared/blog_nav' %>
 
-  <div class="blog-header">
-    <div class="container">
-      <h1 class="blog-title">My Blog</h1>
-      <p class="lead blog-description">An example blog template built with Bootstrap.</p>
-      <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
-    </div>
-  </div>
+  <%= render 'shared/blog_masthead' %>
 
     <div class="container">
 
@@ -33,17 +27,12 @@
         <%= yield %>
 
         <%= render 'shared/blog_sidebar' %>
-
-      <footer class="blog-footer">
-        <p>Blog template built for <a href="https://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-        <p>
-          <a href="#">Back to top</a>
-        </p>
-      </footer>
-      <%= source_helper("blog") %>
       </div>
-    </div>
 
+      <%= render 'shared/blog_footer' %>
+
+      <%= source_helper("blog") %>
+    </div>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
