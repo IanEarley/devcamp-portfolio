@@ -29,7 +29,6 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
 }
 body {
   color: #fff;
@@ -187,4 +186,44 @@ body {
 .app-nav span {
   margin-left: 15px;
   margin-right: 15px;
+}
+
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('NP7iDOL.gif') no-repeat;
+  background-size: cover;
+}
+
+.app-footer {
+  color: #80e5ff;
+}
+
+.pages-header {
+  font-size: 4em;
+  color: #80e5ff;
+}
+
+.pages-subhead {
+  color: #80e5ff;
+}
+
+.pages-text {
+  color: #80e5ff;
+  background-color:rgba(0,0,0,0.7);
+  border: 1px solid #80e5ff;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+.pages-text a {
+  color: #80e5ff;
 }
