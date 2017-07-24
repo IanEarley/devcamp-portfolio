@@ -81,6 +81,14 @@ body {
   border-bottom: .25rem solid transparent;
 }
 
+.navbar-toggler.collapsed {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
   border-bottom-color: rgba(255,255,255,.25);
@@ -157,7 +165,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 65rem;
   }
 }
 
@@ -227,4 +235,19 @@ body {
 
 .pages-text a {
   color: #80e5ff;
+}
+
+.tech-news {
+  color: #216682;
+  margin: 20px;
+}
+
+.tech-news a {
+  color: #268e30;
+  margin: 20px;
+}
+
+.tech-news > .card {
+  padding: 30px;
+
 }
