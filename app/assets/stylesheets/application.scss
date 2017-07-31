@@ -219,6 +219,7 @@ body {
 .pages-header {
   font-size: 4em;
   color: #80e5ff;
+  background-color:rgba(0,0,0,0.7);
 }
 
 .pages-subhead {
@@ -254,4 +255,22 @@ body {
 
 .containing-news {
   margin: auto;
+}
+
+.app-card-container {
+  text-align: left;
+}
+
+.app-card-container > .card{
+  padding: 40px;
+  height: 60%;
+}
+
+.profile-img {
+  border: 1px solid grey
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
