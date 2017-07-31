@@ -1,59 +1,77 @@
-<h1 class="pages-header">About Me</h1>
+<div class="app-card-container">
+  <div class="card">
+    <h1 class="pages-header">About Me</h1>
 
-<hr>
+    <hr>
 
-<div class="row">
-  <div class="col-md-4">
-
-    <%= image_tag "Myself.jpg", width: "95%", alt: "Profile Image" %>
-
-  </div>
-
-  <div class="col-md-8">
-    <p class="pages-text">I am someone who loves coding, I like solving a problem and figuring out what makes a program work. If I ever come across something I don't know, I actually like researching what that unknown is. <br>As far as me personally, I really enjoy music and gaming, if I'm not coding I'm either playing with my band or delving the dungeons of Skyrim. I also enjoy tabletop games like Dungeons and Dragons, so I am the definition of nerd!  <br>That's enough about me though, hope you enjoy the page!</p>
-
-    <p>
-      <button
-        class="btn btn-info"
-        type="button"
-        data-toggle="collapse"
-        data-target="#jobHistory"
-        aria-expanded="false"
-        aria-controller="jobHistory"
-      >
-        Job History
-      </button>
-      
-      <button
-        class="btn btn-info"
-        type="button"
-        data-toggle="collapse"
-        data-target="#education"
-        aria-expanded="false"
-        aria-controller="education"
-      >
-        Education
-      </button>
-    </p>
-
-    <p>
-      <div class="collapse" id="jobHistory">
-        <div class="card card-block">
-          TA at Bottega Tech
-        </div>
-        <div class="card card-block">
-          Apprentice at KumaKo
-        </div>
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "Myself.jpg", width: "90%", alt: "Profile Image" %>
+<!--         <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+              <h4><%= skill.title %></h4>
+              <div class="progress">
+                <div 
+                  class="progress-bar progress-bar-striped bg-warning"
+                  role="progressbar"
+                  aria-valuenow="<%= skill.percent_utilized %>"
+                  aria-valuemax="100"
+                  style="width: <%= skill.percent_utilized %>%;"
+                ></div>
+              </div>
+            </div>
+          <% end %>
+        </div> -->
       </div>
 
-      <div class="collapse" id="education">
-        <div class="card card-block">
-          Bachelor's in Japanese Language and Literature
-        </div>
-        <div class="card card-block">
-          Completion of exchange program at Waseda University, Japan
-        </div>
-      </div>     
-    </p>
+      <div class="col-md-8">
+        <p class="pages-text">I am someone who loves coding, I like solving a problem and figuring out what makes a program work. If I ever come across something I don't know, I actually like researching what that unknown is. <br>As far as me personally, I really enjoy music and gaming, if I'm not coding I'm either playing with my band or delving the dungeons of Skyrim. I also enjoy tabletop games like Dungeons and Dragons, so I am the definition of nerd!  <br>That's enough about me though, hope you enjoy the page!</p>
+
+        <p>
+          <button
+            class="btn btn-info"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controller="jobHistory"
+          >
+            Job History
+          </button>
+
+          <button
+            class="btn btn-info"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controller="education"
+          >
+            Education
+          </button>
+        </p>
+
+        <p>
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              TA at Bottega Tech
+            </div>
+            <div class="card card-block">
+              Apprentice at KumaKo
+            </div>
+          </div>
+
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              Bachelor's in Japanese Language and Literature
+            </div>
+            <div class="card card-block">
+              Completion of exchange program at Waseda University, Japan
+            </div>
+          </div>     
+        </p>
+      </div>
+    </div>
   </div>
 </div>

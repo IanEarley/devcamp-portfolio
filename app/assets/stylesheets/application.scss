@@ -258,19 +258,29 @@ body {
 }
 
 .app-card-container {
+  color: black;
   text-align: left;
 }
 
-.app-card-container > .card{
+.app-card-container > .card {
   padding: 40px;
-  height: 60%;
+  background: transparent;
 }
 
 .profile-img {
-  border: 1px solid grey
+  border: 1px solid grey;
+}
+
+.app-card-container a {
+  color: blue;
 }
 
 .card-block {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
